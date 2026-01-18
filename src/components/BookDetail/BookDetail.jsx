@@ -19,11 +19,11 @@ const BookDetail = () => {
 
     return (
         <div className='my-12'>
-            <h2>Book details: {bookId}</h2>
+            <h2>Book details: {currentBookId}</h2>
             <img className='w-36' src={image} alt="" />
             <br />
             <div className='mx-4'>
-                <button onClick={ () => handleMarkAsRead(bookId)} className="btn btn-outline mr-4 btn-accent">Mark as Read</button>
+                <button onClick={ () => handleMarkAsRead(currentBookId)} className="btn btn-outline mr-4 btn-accent">Mark as Read</button>
                 <button className="btn btn-accent">Add to Wishlist</button>
             </div>
 
